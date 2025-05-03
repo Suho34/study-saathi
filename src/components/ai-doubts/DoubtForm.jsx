@@ -207,7 +207,7 @@ const DoubtForm = ({ onAnswer }) => {
           }
           disabled={loading}
         />
-        <div className="absolute top-4 right-4 flex space-x-2">
+        <div className="absolute bottom-4 left-4 flex space-x-2">
           <select
             value={language}
             onChange={(e) => setLanguage(e.target.value)}
