@@ -264,16 +264,7 @@ export const StudyPlanResults = ({
                 </div>
                 <div className="p-4 space-y-3">
                   {day.slots.map((slot, slotIndex) => (
-                    <div
-                      key={slotIndex}
-                      className={`p-3 rounded-md relative ${
-                        completedTasks[`${dayIndex}-${slotIndex}`]
-                          ? "bg-green-50 border-l-4 border-green-400"
-                          : slot.priority > 3
-                          ? "bg-red-50 border-l-4 border-red-400"
-                          : "bg-gray-50"
-                      }`}
-                    >
+                    <div key={slotIndex} className={`p-3 rounded-md relative`}>
                       <div className="flex justify-between items-start">
                         <span className="font-medium text-gray-800">
                           {slot.time}
